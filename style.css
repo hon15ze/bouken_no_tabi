@@ -1,0 +1,154 @@
+body{
+    margin: 0 auto;
+    width: 85%;
+    background: rgb(94, 194, 189);
+    color: #333;
+    font-family: "Nico Moji";
+    font-size: 20px;
+}
+h1{
+    color:#333;
+    font-size: 20px;
+    text-align: center;
+}
+h2{
+    color:#333;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+form{
+    overflow: hidden;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 20px 20px;
+    margin: 15px;
+    color: white;
+    float: right;
+    font-family: "Nico Moji";
+    font-size: 18px;
+    border-radius:30px;
+}
+input[type="submit"]:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/*ボタンの色*/
+.a{
+background-color: rgb(213, 081, 103);
+}
+.e{
+background-color: rgb(103, 179, 099);
+}
+.s{
+background-color: rgb(051, 135, 192);
+}
+.r{
+    background-color: rgb(232, 142, 079);
+    }
+.start{
+    text-align: center;
+    background-color: rgb(213, 081, 103);
+    float: unset !important;
+}
+
+a{
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.games{
+    background:rgb(253, 239, 209);
+    padding:15px;
+    position:relative;
+}
+.monster-i{
+    position: absolute;
+    height: 230px;
+}
+.m-img{
+    width:auto;
+    height:200px;
+    margin:3em;
+    padding-left: 5em;
+    display:block;
+    float: left;
+    position: relative;
+    margin-left: 30px;
+}
+.m-hp{
+    font-size:18px;
+    text-align:left;
+}
+
+#scroll-box{
+background-color: black;
+height: 220px;
+width: 100%;
+margin: 0 auto;
+}
+#typing{
+    border:3px solid white;
+	border-radius:6px;
+	margin:1.4em;
+	padding:1em;
+	float:left;
+	height:5em;
+    overflow:hidden;
+    position: relative;
+    width: 80%;
+    overflow-y: scroll;
+    color: #ffffff;
+
+    margin:5% 7% auto;
+}
+
+
+.status{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.outline{
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+}
+/*ボタン中央配置*/
+.b-c{
+    text-align: center;
+}
+/*hpmp*/
+i{
+    font-size: 15px;
+    margin: 5px;
+}
+.hp{
+    color: rgb(213, 081, 103);
+}
+.mp{
+    color: rgb(051, 135, 192);
+}
+
+.reset{
+    padding: 20px 20px;
+    margin: 15px auto;
+    color: white;
+    font-family: "Nico Moji";
+    font-size: 18px;
+    border-radius:30px;
+    background-color: rgb(213, 081, 103);
+    text-decoration: none;
+    width: 100px;
+}
+.reset:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.over{
+    height: 200px;
+}
