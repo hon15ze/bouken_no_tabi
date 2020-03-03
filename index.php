@@ -334,88 +334,89 @@ $_POST = array();
 </head>
 <body>
 
-<?php if(empty($_SESSION)){ ?>
-<h1>ぼうけんのたび</h1>
-<div class="games">
-<h2>GAME START ?</h2>
-<p class="outline">よくあるRPGのせかいに まよいこんでしまった あなた！<br>
-ぼうけんしゃ として このせかいを たびしよう！<br>
-<img src="img/冒険者.png" class="over"><br>
-じゅんびは いいかな？
-</p>
-<form method="post">
-<div class="b-c">
-<input type="submit" name="start" class="start"value="▶︎スタート">
-</div>
-</form>
+    <?php if(empty($_SESSION)){ ?>
+        <h1>ぼうけんのたび</h1>
+        <div class="games">
+            <h2>GAME START ?</h2>
+            <p class="outline">よくあるRPGのせかいに まよいこんでしまった あなた！<br>
+                ぼうけんしゃ として このせかいを たびしよう！<br>
+                <img src="img/冒険者.png" class="over"><br>
+                じゅんびは いいかな？
+            </p>
+            <form method="post">
+                <div class="b-c">
+                    <input type="submit" name="start" class="start"value="▶︎スタート">
+                </div>
+            </form>
 
-<?php }else{ ?>
-<div class="games">
+            <?php }else{ ?>
+            <div class="games">
 
-<h2><?php echo $_SESSION['monster']->getName().'が あらわれた!!'; ?></h2>
-<div class="monster-i">
-<img src="<?php echo $_SESSION['monster']->getImg(); ?>" class="m-img">
-</div>
-<p class="m-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
+                <h2><?php echo $_SESSION['monster']->getName().'が あらわれた!!'; ?></h2>
+                <div class="monster-i">
+                    <img src="<?php echo $_SESSION['monster']->getImg(); ?>" class="m-img">
+                </div>
+                <p class="m-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
 
-<div class="status">
-<p><?php echo $_SESSION['human']->getName(); ?></p>
-<p>HP<i class="fas fa-heart hp"></i><?php echo $_SESSION['human']->getHp(); ?></p>
-<p>MP<i class="fas fa-heart mp"></i><?php echo $_SESSION['human']->getMp(); ?></p>
-<p>EX：<?php echo $_SESSION['human']->getXp(); ?></p>
-<p>レベル<?php echo $_SESSION['human']->getLevel(); ?></p>
-<p>たおしたモンスターのかず：<?php echo $_SESSION['knockDownCount']; ?></p>
-</div>
+            <div class="status">
+                <p><?php echo $_SESSION['human']->getName(); ?></p>
+                <p>HP<i class="fas fa-heart hp"></i><?php echo $_SESSION['human']->getHp(); ?></p>
+                <p>MP<i class="fas fa-heart mp"></i><?php echo $_SESSION['human']->getMp(); ?></p>
+                <p>EX：<?php echo $_SESSION['human']->getXp(); ?></p>
+                <p>レベル<?php echo $_SESSION['human']->getLevel(); ?></p>
+                <p>たおしたモンスターのかず：<?php echo $_SESSION['knockDownCount']; ?></p>
+            </div>
 
-<form method="post">
-<input type="submit" name="attack" class="a" value="▶︎こうげき">
-<input type="submit" name="recover" class="r" value="▶︎かいふくまほう">
-<input type="submit" name="escape" class="e" value="▶︎にげる">
-<input type="submit" name="start" class="s" value="▶︎はじめから">
-</form>
+            <form method="post">
+                <input type="submit" name="attack" class="a" value="▶︎こうげき">
+                <input type="submit" name="recover" class="r" value="▶︎かいふくまほう">
+                <input type="submit" name="escape" class="e" value="▶︎にげる">
+                <input type="submit" name="start" class="s" value="▶︎はじめから">
+            </form>
 
-</div>
-<div id="scroll-box" class="history">
-<p id="typing"><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
-</div>
+        </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
+        <div id="scroll-box" class="history">
+            <p id="typing"><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
+        </div>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
 
 
-<script>
+        <script>
 
-jQuery( function() {
-	autoScroll();
-} );
-var $scrollY = 0;
-function autoScroll() {
-	var $sampleBox = jQuery( '#typing' );
-	$sampleBox.scrollTop( ++$scrollY );
-	if( $scrollY < $sampleBox[0].scrollHeight - $sampleBox[0].clientHeight ){
-	setTimeout( "autoScroll()", 1 );
-	}else{
-	$scrollY = 0;
-}}
-//function typing(str = ""){
-//    let buf = document.getElementById("typing").innerHTML; //書き込み済みの文字を要素から取得
-//    let writed = buf.length; //書き込み済みの文字数を取得
- //   let write = "";
- //   if(writed < str.length){
-   //     write = str.charAt(writed); //1文字だけ取得する
-   //     
-   // }else{
-   // }
-   // document.getElementById("typing").innerHTML = buf + write; //1文字だけ追加していく
-//}
+        jQuery( function() {
+	        autoScroll();
+        } );
+        var $scrollY = 0;
+        function autoScroll() {
+	        var $sampleBox = jQuery( '#typing' );
+	        $sampleBox.scrollTop( ++$scrollY );
+        	if( $scrollY < $sampleBox[0].scrollHeight - $sampleBox[0].clientHeight ){
+        	setTimeout( "autoScroll()", 1 );
+       	}else{
+    	    $scrollY = 0;
+        }}
+        //function typing(str = ""){
+        //    let buf = document.getElementById("typing").innerHTML; //書き込み済みの文字を要素から取得
+        //    let writed = buf.length; //書き込み済みの文字数を取得
+        //    let write = "";
+        //   if(writed < str.length){
+        //     write = str.charAt(writed); //1文字だけ取得する
+        //     
+        // }else{
+        // }
+        //   document.getElementById("typing").innerHTML = buf + write; //1文字だけ追加していく
+        //}
 
-//const str = document.getElementById("typing").innerHTML; //書き込む文字を要素から取得
-//const delay = 100 //1文字が表示される時間
+        //const str = document.getElementById("typing").innerHTML; //書き込む文字を要素から取得
+        //const delay = 100 //1文字が表示される時間
 
-//document.getElementById("typing").innerHTML = "";
-//window.setInterval(function(){typing(str);}, delay);
-</script>
+        //document.getElementById("typing").innerHTML = "";
+        //window.setInterval(function(){typing(str);}, delay);
+    </script>
 
-<?php } ?>
+    <?php } ?>
 
 </body>
 </html>

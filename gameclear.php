@@ -14,23 +14,21 @@ session_start();
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 
 </head>
-<body>
+    <body>
 
-<h1>ぼうけんのたび</h1>
-<div class="games">
-
-<h2>GAME CLEAR!!</h2>
-<p class="outline">あなたは ラスボスを たおしました！<br>
-これで このせかいにも へいわが おとずれることでしょう！<br>
-THANK YOU FOR PLAYING!!<br>
-<img src="img/クリア.png" class="over"><br>
-もういちど あそぶ？
-</p>
-<div class="b-c">
-<a href="index.php" class="reset">▶︎はい</a>
-</div>
-
-
-
-</body>
+    <h1>ぼうけんのたび</h1>
+    <div class="games">
+        <h2>GAME CLEAR!!</h2>
+            <p class="outline">あなたは ラスボスを たおしました！<br>
+                これで このせかいにも へいわが おとずれることでしょう！<br>
+                THANK YOU FOR PLAYING!!<br>
+                <img src="img/クリア.png" class="over"><br>
+                もういちど あそぶ？
+            </p>
+        <div class="b-c">
+            <a href="index.php" class="reset">▶︎はい</a>
+        </div>
+    </div>
+    
+    </body>
 </html>
