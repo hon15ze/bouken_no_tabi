@@ -332,7 +332,6 @@ $_POST = array();
     <meta property="og:description" content="オブジェクト指向アウトプットで作ったゲームです" />
     <meta property="og:image" content="https://box.c.yimg.jp/res/box-l-kpyxxrigoa7igebiycqjncqe2q-1001?uid=c35ed679-2f31-4975-b480-ee9d06c17fb5&etag=e5e24256ff84bec8a725a24c2c2a81be" />
 </head>
-</head>
 <body>
 
     <?php if(empty($_SESSION)){ ?>
