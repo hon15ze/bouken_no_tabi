@@ -321,9 +321,8 @@ $_POST = array();
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <!-- フォントアイコン -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+
     <!-- ツイッターカード-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@hon15ze" />
