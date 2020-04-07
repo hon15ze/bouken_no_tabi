@@ -327,10 +327,11 @@ $_POST = array();
     <!-- ツイッターカード-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@hon15ze" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="ぼうけんのたび" /> 
-    <meta property="og:description" content="オブジェクト指向アウトプットで作ったゲームです" /> 
-    <meta property="og:image" content="" />
+    <meta property="og:url" content="hon15ze.php.xdomain.jp" />
+    <meta property="og:title" content="ぼうけんのたび" />
+    <meta property="og:description" content="オブジェクト指向アウトプットで作ったゲームです" />
+    <meta property="og:image" content="https://box.c.yimg.jp/res/box-l-kpyxxrigoa7igebiycqjncqe2q-1001?uid=c35ed679-2f31-4975-b480-ee9d06c17fb5&etag=e5e24256ff84bec8a725a24c2c2a81be" />
+</head>
 </head>
 <body>
 
